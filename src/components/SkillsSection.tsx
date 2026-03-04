@@ -12,6 +12,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { skillCategories } from "../data/portfolioData";
+import { GlitchText } from "./GlitchText";
 
 export function SkillsSection() {
   const theme = useMantineTheme();
@@ -41,11 +42,10 @@ export function SkillsSection() {
               color: theme.colors.forestDark[0],
               fontSize: "clamp(2rem, 4vw, 2.5rem)",
               fontWeight: 700,
-              textTransform: "uppercase",
               letterSpacing: "0.05em",
             }}
           >
-            Key Skills & Expertise
+            <GlitchText text="Key Skills & Expertise" />
           </Title>
         </motion.div>
 

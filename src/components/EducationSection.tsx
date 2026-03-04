@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { education } from '../data/portfolioData';
+import { GlitchText } from './GlitchText';
 
 export function EducationSection() {
   const theme = useMantineTheme();
@@ -33,11 +34,10 @@ export function EducationSection() {
               color: theme.colors.wheatLight[0],
               fontSize: 'clamp(2rem, 4vw, 2.5rem)',
               fontWeight: 700,
-              textTransform: 'uppercase',
               letterSpacing: '0.05em',
             }}
           >
-            Education & Certifications
+            <GlitchText text="Education & Certifications" />
           </Title>
         </motion.div>
 

@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { recommendations } from "../data/portfolioData";
+import { GlitchText } from "./GlitchText";
 import { IconChevronLeft, IconChevronRight, IconBrandLinkedin } from "@tabler/icons-react";
 
 export function RecommendationsSection() {
@@ -70,11 +71,10 @@ export function RecommendationsSection() {
               color: theme.colors.wheatLight[0],
               fontSize: "clamp(2rem, 4vw, 2.5rem)",
               fontWeight: 700,
-              textTransform: "uppercase",
               letterSpacing: "0.05em",
             }}
           >
-            Recommendations
+            <GlitchText text="Recommendations" />
           </Title>
           <Text
             style={{

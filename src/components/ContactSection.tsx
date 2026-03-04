@@ -17,6 +17,7 @@ import {
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { GlitchText } from "./GlitchText";
 
 export function ContactSection() {
   const theme = useMantineTheme();
@@ -73,11 +74,10 @@ export function ContactSection() {
               color: theme.colors.forestDark[0],
               fontSize: "clamp(2rem, 4vw, 2.5rem)",
               fontWeight: 700,
-              textTransform: "uppercase",
               letterSpacing: "0.05em",
             }}
           >
-            Get In Touch
+            <GlitchText text="Get In Touch" />
           </Title>
         </motion.div>
 

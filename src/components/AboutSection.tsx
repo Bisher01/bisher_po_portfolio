@@ -1,4 +1,5 @@
 import { Container, Title, Text, Paper, Box, useMantineTheme } from '@mantine/core';
+import { GlitchText } from './GlitchText';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
@@ -32,11 +33,10 @@ export function AboutSection() {
               color: theme.colors.forestDark[0],
               fontSize: 'clamp(2rem, 4vw, 2.5rem)',
               fontWeight: 700,
-              textTransform: 'uppercase',
               letterSpacing: '0.05em',
             }}
           >
-            About Me
+            <GlitchText text="About Me" />
           </Title>
         </motion.div>
 

@@ -15,6 +15,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { projects } from "../data/portfolioData";
+import { GlitchText } from "./GlitchText";
 import { generalIcons } from "../constants/icons";
 
 const {
@@ -67,11 +68,10 @@ export function ProjectsSection() {
               color: theme.colors.forestDark[0],
               fontSize: "clamp(2rem, 4vw, 2.5rem)",
               fontWeight: 700,
-              textTransform: "uppercase",
               letterSpacing: "0.05em",
             }}
           >
-            Featured Projects
+            <GlitchText text="Featured Projects" />
           </Title>
           <Text
             size="lg"

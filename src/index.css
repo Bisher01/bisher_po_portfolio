@@ -73,3 +73,54 @@ body {
   background-color: #428177;
   color: #edebe0;
 }
+
+.glitch-title {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch-title::before,
+.glitch-title::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.glitch-title::before {
+  text-shadow: -5px 0 #428177;
+  animation: distort-1 2s linear infinite alternate-reverse;
+}
+
+.glitch-title::after {
+  text-shadow: 5px 0 #d4cfc0;
+  animation: distort-2 3s linear infinite alternate-reverse;
+}
+
+@keyframes distort-1 {
+  0%   { clip-path: inset(0 0 95% 0); transform: translate(-2px, 0); }
+  10%  { clip-path: inset(10% 0 85% 0); transform: translate(2px, 0); }
+  20%  { clip-path: inset(25% 0 60% 0); transform: translate(-2px, 0); }
+  30%  { clip-path: inset(40% 0 50% 0); transform: translate(3px, 0); }
+  40%  { clip-path: inset(55% 0 30% 0); transform: translate(-3px, 0); }
+  50%  { clip-path: inset(65% 0 20% 0); transform: translate(2px, 0); }
+  60%  { clip-path: inset(70% 0 10% 0); transform: translate(-2px, 0); }
+  70%  { clip-path: inset(80% 0 5% 0);  transform: translate(3px, 0); }
+  80%  { clip-path: inset(90% 0 2% 0);  transform: translate(-2px, 0); }
+  90%  { clip-path: inset(5% 0 90% 0);  transform: translate(2px, 0); }
+  100% { clip-path: inset(50% 0 45% 0); transform: translate(-3px, 0); }
+}
+
+@keyframes distort-2 {
+  0%   { clip-path: inset(80% 0 5% 0);  transform: translate(3px, 0); }
+  15%  { clip-path: inset(60% 0 30% 0); transform: translate(-2px, 0); }
+  30%  { clip-path: inset(40% 0 50% 0); transform: translate(2px, 0); }
+  45%  { clip-path: inset(20% 0 70% 0); transform: translate(-3px, 0); }
+  60%  { clip-path: inset(5% 0 90% 0);  transform: translate(2px, 0); }
+  75%  { clip-path: inset(30% 0 60% 0); transform: translate(-2px, 0); }
+  90%  { clip-path: inset(70% 0 15% 0); transform: translate(3px, 0); }
+  100% { clip-path: inset(90% 0 2% 0);  transform: translate(-2px, 0); }
+}

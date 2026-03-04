@@ -10,6 +10,7 @@ import {
 import { motion } from "framer-motion";
 import { personalInfo } from "../data/portfolioData";
 import { generalIcons } from "../constants/icons";
+import { GlitchText } from "./GlitchText";
 
 const {
   linkedin: IconBrandLinkedin,
@@ -104,11 +105,10 @@ export function HeroSection() {
                 fontSize: "clamp(1.2rem, 3vw, 1.8rem)",
                 fontWeight: 600,
                 color: theme.colors.wheatLight[0],
-                textTransform: "uppercase",
                 letterSpacing: "0.1em",
               }}
             >
-              {personalInfo.title}
+              <GlitchText text={personalInfo.title} />
             </Text>
           </motion.div>
 
