@@ -20,7 +20,7 @@ export const personalInfo: PersonalInfo = {
   location: "Damascus, Syria",
   linkedin: "https://www.linkedin.com/in/bisher-al-hasani-19008a219/",
   github: undefined,
-  resumePath: "/src/assets/files/eng_bisher_alhasani.pdf",
+  resumePath: "/src/assets/files/Eng.Bisher AlHasani - Product Owner.pdf",
 };
 
 export const navLinks: NavLink[] = [
