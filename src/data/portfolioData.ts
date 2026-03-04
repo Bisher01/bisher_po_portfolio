@@ -21,7 +21,7 @@ export const personalInfo: PersonalInfo = {
   location: "Damascus, Syria",
   linkedin: "https://www.linkedin.com/in/bisher-al-hasani-19008a219/",
   github: undefined,
-  resumePath: "/src/assets/files/Eng.Bisher AlHasani - Product Owner.pdf",
+  resumePath: "assets/files/Eng.Bisher AlHasani - Product Owner.pdf",
 };
 
 export const navLinks: NavLink[] = [
@@ -41,10 +41,10 @@ export const projects: Project[] = [
     date: "01/2026 - Present",
     description:
       "Project Manager and Lead System Analyst for a high-security B2B marketplace and networking hub for the ASKON Businessmen Association. Authored the full SRS and designed the trade lifecycle from product discovery to secure Escrow settlement. Managed the development of a unique 'Trade Request' system, AI-powered multilingual chat, and a 'Fair-Discovery' engine for member exposure. Orchestrated cross-functional teams using Scrum to deliver a professional digital ecosystem that replaces informal trade communication with a structured, secure commerce platform.",
-    image: "/src/assets/images/pyramind.png",
+    image: "assets/images/askonnect.png",
     playStore: null,
     appStore: null,
-    website: null,
+    website: "https://dev-front-askonnect.ultrawares.com/",
     current: true,
   },
   {
@@ -53,7 +53,7 @@ export const projects: Project[] = [
     date: "01/2026",
     description:
       "Managed the design and deployment of the official landing page for ASKON Syria. As Project Manager, I defined the requirements for professional branding and multilingual accessibility (Arabic, English, Turkish) to create a clear digital entry point for the association. This project focused on providing a streamlined public interface that introduces members to the association's vision and guides them toward the secure B2B networking platform.",
-    image: "/src/assets/images/pyramind.png",
+    image: "assets/images/askon.png",
     playStore: null,
     appStore: null,
     website: "https://www.askon-syria.com/en#home",
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     date: "04/2025 - Present",
     description:
       "Led the analysis and planning of the project, defining clear requirements, user stories, and acceptance criteria to align development with business goals. Managed the development process using the Scrum framework, facilitating sprint planning, daily stand-ups, reviews, and retrospectives to ensure continuous progress and team collaboration. Coordinated cross-functional teams and stakeholders, tracking progress through agile tools and ensuring timely delivery of high-quality features..",
-    image: "/src/assets/images/pyramind.png",
+    image: "assets/images/pyramind.png",
     playStore: null,
     appStore: null,
     website: "https://pyramind.pharaon-group.com/on-Board",
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     date: "11/2023 - 10/2024",
     description:
       "Developed two mobile applications connecting users with building service professionals, such as contractors, architects, and engineers.Designed and integrated a real- time chat feature, enabling seamless communication between users and service providers.Enhanced the user experience and interface, ensuring intuitive navigation and engagement.",
-    image: "/src/assets/images/damen.png",
+    image: "assets/images/damen.png",
     playStore:
       "https://play.google.com/store/apps/details?id=net.damenapp.damen",
     appStore:
@@ -91,7 +91,7 @@ export const projects: Project[] = [
     date: "06/2024 - 08/2024",
     description:
       "Developed 100T, a mobile app tailored for collectors to explore and acquire rare banknotes, unique coins, and collectibles.Implemented a streamlined UI/UX to ensure effortless browsing and purchasing.Optimized performance for fast loading and seamless interactions.",
-    image: "/src/assets/images/trillion.png",
+    image: "assets/images/trillion.png",
     playStore: "https://play.google.com/store/apps/details?id=com.trillions",
     appStore: "https://apps.apple.com/us/app/100trillions/id6677025906",
     website: null,
@@ -103,7 +103,7 @@ export const projects: Project[] = [
     date: "09/2024 - 10/2024",
     description:
       "Built Luca AI, a financial AI assistant app designed to simplify expense tracking and financial management.Integrated an AI-powered chatbot, allowing users to track expenses effortlessly.Implemented customizable reports, enabling users to visualize spending habits and insights.",
-    image: "/src/assets/images/luca.png",
+    image: "assets/images/luca.png",
     playStore:
       "https://play.google.com/store/apps/details?id=com.tradinos.luca",
     appStore: "https://apps.apple.com/us/app/luca-ai/id6468981767",
@@ -116,7 +116,7 @@ export const projects: Project[] = [
     date: "05/2024 - 06/2024",
     description:
       "Led the development of the Batra mobile application, a digital platform for one of Iraq's leading lighting solution providers.Engineered a user-friendly interface for browsing and purchasing indoor and outdoor lighting products, ensuring a seamless shopping experience. Integrated a robust product catalog and inventory management system to align with the company's global standards.",
-    image: "/src/assets/images/batra.png",
+    image: "assets/images/batra.png",
     playStore:
       "https://play.google.com/store/apps/details?id=plansters.plansters.com.batra",
     appStore:
@@ -130,7 +130,7 @@ export const projects: Project[] = [
     date: "01/2024 - 04/2024",
     description:
       "Designed and developed Al Aseel Keys a mobile application tailored for managing and purchasing high-quality security and access control solutions.Built a dynamic UI/UX to enhance customer interaction and simplify product navigation.Implemented real-time data synchronization and efficient backend solutions for optimal performance.",
-    image: "/src/assets/images/alassel.png",
+    image: "assets/images/alassel.png",
     playStore:
       "https://play.google.com/store/apps/details?id=com.plansters.alaseel_app",
     appStore:
@@ -144,7 +144,7 @@ export const projects: Project[] = [
     date: "08/2023 - 10/2023",
     description:
       "Contributed to the Zeraa Center app, an e-commerce platform for agricultural equipment and accessories.Implemented a dynamic pricing system, allowing users to monitor price changes and trends.Ensured a smooth shopping experience, optimizing app performance and navigation.",
-    image: "/src/assets/images/zeraa.png",
+    image: "assets/images/zeraa.png",
     playStore: "https://play.google.com/store/apps/details?id=com.zeraacenter",
     appStore: null,
     website: null,
@@ -156,7 +156,7 @@ export const projects: Project[] = [
     date: "05/2023 - 08/2023",
     description:
       "Helped develop an e-commerce platform, enabling users to list, promote, and sell products and services.Designed and integrated category-based filtering, allowing for effective product discovery.Focused on performance optimization for a smooth browsing experience.",
-    image: "/src/assets/images/pazar.png",
+    image: "assets/images/pazar.png",
     playStore: "https://play.google.com/store/apps/details?id=com.pazarin",
     appStore: "https://apps.apple.com/us/app/pazarin/id6474499206",
     website: null,
@@ -168,7 +168,7 @@ export const projects: Project[] = [
     date: "01/2023 - 02/2023",
     description:
       "Led the development of Compassty, an app that allows users to create and share personalized addresses.Implemented features for categorizing and organizing locations, enhancing searchability.Ensured a user-friendly design, making address management effortless.",
-    image: "/src/assets/images/compasty.png",
+    image: "assets/images/compasty.png",
     playStore: null,
     appStore: "https://apps.apple.com/us/app/compassty/id6448457251",
     website: null,
@@ -180,7 +180,7 @@ export const projects: Project[] = [
     date: "07/2023 - 09/2023",
     description:
       " Developed a service marketplace app, connecting users with contractors, architects, and engineers.Integrated a real-time chat system to facilitate direct communication between users and service providers.Focused on usability and accessibility, ensuring a seamless experience for all users.",
-    image: "/src/assets/images/rp.png",
+    image: "assets/images/rp.png",
     playStore:
       "https://play.google.com/store/apps/details?id=com.rpapp.onmrhost&hl=nl&gl=US",
     appStore: null,
@@ -193,7 +193,7 @@ export const projects: Project[] = [
     date: "12/2021 - 02/2022",
     description:
       "Developed eMenu, a mobile and web-based platform that enables users to browse digital restaurant menus.Created two versions (mobile app and website) for a cross-platform experience.Ensured a seamless and responsive UI, allowing for quick and intuitive navigation.",
-    image: "/src/assets/images/emenu.png",
+    image: "assets/images/emenu.png",
     playStore: null,
     appStore: null,
     website: "https://emenu.theemenu.com/#/home/37155f9b54",

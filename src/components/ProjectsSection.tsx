@@ -108,7 +108,6 @@ export function ProjectsSection() {
                   radius="md"
                   style={{
                     backgroundColor: theme.white,
-                    border: `2px solid ${theme.colors.forestLight[0]}`,
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
@@ -118,13 +117,9 @@ export function ProjectsSection() {
                   onMouseEnter={(e) => {
                     e.currentTarget.style.boxShadow =
                       "0 12px 28px rgba(0,0,0,0.15)";
-                    e.currentTarget.style.borderColor =
-                      theme.colors.forestMid[0];
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.boxShadow = "";
-                    e.currentTarget.style.borderColor =
-                      theme.colors.forestLight[0];
                   }}
                 >
                   <Card.Section>
@@ -145,7 +140,7 @@ export function ProjectsSection() {
                         style={{ width: "100%", height: "100%" }}
                       >
                         <Image
-                          src={project.image}
+                          src={`${import.meta.env.BASE_URL}${project.image}`}
                           alt={project.title}
                           height={200}
                           fit="cover"

@@ -41,9 +41,14 @@ export function AboutSection() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          initial={{ opacity: 0, scale: 0.9, y: 30 }}
+          animate={isInView ? { opacity: 1, scale: 1, y: 0 } : { opacity: 0, scale: 0.9, y: 30 }}
+          transition={{
+            type: "spring" as const,
+            stiffness: 100,
+            damping: 15,
+            delay: 0.2
+          }}
         >
           <Paper
             shadow="md"
@@ -69,7 +74,12 @@ export function AboutSection() {
                 key={index}
                 initial={{ opacity: 0, x: -20 }}
                 animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
-                transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
+                transition={{
+                  type: "spring" as const,
+                  stiffness: 100,
+                  damping: 12,
+                  delay: 0.4 + index * 0.15
+                }}
               >
                 <Text
                   size="lg"

@@ -70,8 +70,8 @@ export function SkillsSection() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <motion.div
-                  whileHover={{ y: -10 }}
-                  transition={{ type: "spring" as const, stiffness: 300 }}
+                  whileHover={{ y: -12, scale: 1.02 }}
+                  transition={{ type: "spring" as const, stiffness: 400, damping: 10 }}
                 >
                   <Paper
                     shadow="md"
@@ -148,8 +148,10 @@ export function SkillsSection() {
                               : { opacity: 0, x: -10 }
                           }
                           transition={{
-                            duration: 0.4,
-                            delay: index * 0.1 + idx * 0.05,
+                            type: "spring" as const,
+                            stiffness: 100,
+                            damping: 12,
+                            delay: index * 0.1 + 0.3 + idx * 0.05,
                           }}
                         >
                           <Box

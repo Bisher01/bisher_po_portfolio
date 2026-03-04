@@ -104,9 +104,14 @@ export function ContactSection() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          initial={{ opacity: 0, y: 50, scale: 0.95 }}
+          animate={isInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 50, scale: 0.95 }}
+          transition={{
+            type: "spring" as const,
+            stiffness: 100,
+            damping: 15,
+            delay: 0.4
+          }}
         >
           <Paper
             shadow="md"
@@ -128,8 +133,13 @@ export function ContactSection() {
                   animate={
                     isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }
                   }
-                  transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                  whileHover={{ x: 10 }}
+                  transition={{
+                    type: "spring" as const,
+                    stiffness: 100,
+                    damping: 12,
+                    delay: 0.5 + index * 0.1
+                  }}
+                  whileHover={{ x: 15, scale: 1.02 }}
                 >
                   <Box
                     style={{

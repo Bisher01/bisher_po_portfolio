@@ -28,20 +28,21 @@ export function HeroSection() {
       opacity: 1,
       transition: {
         staggerChildren: 0.2,
-        delayChildren: 0.3,
+        delayChildren: 2.6,
       },
     },
   };
 
   const itemVariants = {
-    hidden: { y: 50, opacity: 0 },
+    hidden: { y: 100, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
       transition: {
         type: "spring" as const,
-        stiffness: 100,
-        damping: 12,
+        stiffness: 120,
+        damping: 10,
+        mass: 0.8,
       },
     },
   };
@@ -65,19 +66,33 @@ export function HeroSection() {
           style={{ textAlign: "center", color: theme.colors.wheatLight[0] }}
         >
           <motion.div variants={itemVariants}>
-            <Title
-              order={1}
+            <motion.div
               style={{
-                fontSize: "clamp(2rem, 5vw, 3.5rem)",
-                fontWeight: 800,
-                marginBottom: "1rem",
-                color: theme.colors.wheatLight[0],
-                letterSpacing: "-0.02em",
-                textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
+                willChange: "transform",
+                transform: "translateZ(0)",
+              }}
+              animate={{ y: [0, -6, 0] }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 2.8,
               }}
             >
-              {personalInfo.name}
-            </Title>
+              <Title
+                order={1}
+                style={{
+                  fontSize: "clamp(2rem, 5vw, 3.5rem)",
+                  fontWeight: 800,
+                  marginBottom: "1rem",
+                  color: theme.colors.wheatLight[0],
+                  letterSpacing: "-0.02em",
+                  textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
+                }}
+              >
+                {personalInfo.name}
+              </Title>
+            </motion.div>
           </motion.div>
 
           <motion.div variants={itemVariants}>
@@ -129,12 +144,12 @@ export function HeroSection() {
             >
               {personalInfo.resumePath && (
                 <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
+                  whileHover={{ scale: 1.08 }}
+                  whileTap={{ scale: 0.9 }}
                 >
                   <Button
                     component="a"
-                    href={personalInfo.resumePath}
+                    href={`${import.meta.env.BASE_URL}${personalInfo.resumePath}`}
                     download="Bisher_Alhasani_CV.pdf"
                     size="lg"
                     leftSection={<IconDownload size={20} />}
@@ -158,8 +173,8 @@ export function HeroSection() {
               )}
               {personalInfo.linkedin && (
                 <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
+                  whileHover={{ scale: 1.08 }}
+                  whileTap={{ scale: 0.9 }}
                 >
                   <Button
                     component="a"
@@ -186,8 +201,8 @@ export function HeroSection() {
                 </motion.div>
               )}
               <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.9 }}
               >
                 <Button
                   component="a"

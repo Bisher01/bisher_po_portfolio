@@ -76,9 +76,14 @@ export function ExperienceSection() {
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: -50 }}
-              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-              transition={{ duration: 0.5, delay: index * 0.15 }}
+              initial={{ opacity: 0, x: -50, scale: 0.9 }}
+              animate={isInView ? { opacity: 1, x: 0, scale: 1 } : { opacity: 0, x: -50, scale: 0.9 }}
+              transition={{
+                type: "spring" as const,
+                stiffness: 100,
+                damping: 12,
+                delay: index * 0.15
+              }}
             >
               <Timeline.Item
                 bullet={
@@ -154,8 +159,10 @@ export function ExperienceSection() {
                         isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }
                       }
                       transition={{
-                        duration: 0.4,
-                        delay: index * 0.15 + idx * 0.1,
+                        type: "spring" as const,
+                        stiffness: 100,
+                        damping: 15,
+                        delay: index * 0.15 + 0.3 + idx * 0.1,
                       }}
                     >
                       <Text

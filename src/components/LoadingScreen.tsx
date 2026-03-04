@@ -64,7 +64,7 @@ export function LoadingScreen() {
               letterSpacing: "0.1em",
             }}
           >
-            BA
+            BH
           </Box>
         </motion.div>
 
