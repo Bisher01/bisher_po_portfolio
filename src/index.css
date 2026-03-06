@@ -28,7 +28,7 @@ p, span, a, button {
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   overflow-x: hidden;
 }
 

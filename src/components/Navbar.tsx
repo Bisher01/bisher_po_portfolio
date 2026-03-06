@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Box, Container, Group, Burger, Drawer, Stack, Anchor, useMantineTheme } from '@mantine/core';
 import { useDisclosure, useWindowScroll } from '@mantine/hooks';
 import { motion, useScroll, useSpring } from 'framer-motion';
+import { smoothScrollTo } from '../utils/smoothScroll';
 
 const links = [
   { label: 'Home', href: '#home' },
@@ -60,14 +61,7 @@ export function Navbar() {
     setActive(label);
     close();
 
-    const element = document.querySelector(href);
-    if (element) {
-      const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 70;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: 'instant',
-      });
-    }
+    smoothScrollTo(href, 1200, 70);
   };
 
   return (

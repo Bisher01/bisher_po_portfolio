@@ -2,13 +2,14 @@ import { ActionIcon, useMantineTheme } from '@mantine/core';
 import { useWindowScroll } from '@mantine/hooks';
 import { IconArrowUp } from '@tabler/icons-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { smoothScrollTo } from '../utils/smoothScroll';
 
 export function BackToTop() {
-  const [scroll, scrollTo] = useWindowScroll();
+  const [scroll] = useWindowScroll();
   const theme = useMantineTheme();
 
   const scrollToTop = () => {
-    scrollTo({ y: 0 });
+    smoothScrollTo(0, 1200);
   };
 
   return (
