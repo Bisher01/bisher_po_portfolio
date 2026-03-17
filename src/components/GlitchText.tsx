@@ -22,6 +22,7 @@ export function GlitchText({ text, texts }: GlitchTextProps) {
           schedule();
         }, 600);
       }, 2800);
+      
     };
 
     schedule();

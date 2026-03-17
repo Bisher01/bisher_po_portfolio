@@ -14,7 +14,7 @@ export const personalInfo: PersonalInfo = {
   bio: [
     "Product Owner and Flutter Developer with 4+ years of experience building and scaling digital products across mobile and web platforms.",
     "Lead product planning, backlog structuring, release coordination, and stakeholder communication, while actively contributing to cross-platform mobile development using Flutter and Dart.",
-    "Known for turning complex business requirements into structured execution plans and maintainable codebases, bridging product direction with hands-on technical implementation."
+    "Known for turning complex business requirements into structured execution plans and maintainable codebases, bridging product direction with hands-on technical implementation.",
   ],
   email: "bisher.hasani@gmail.com",
   phone: "+963 939202488",
@@ -216,7 +216,7 @@ export const experiences: Experience[] = [
       "Coordinate cross-functional teams to align product strategy with operational and user needs.",
       "Develop and maintain cross-platform mobile applications and implement a unified structure adopted across all company mobile apps.",
       "Establish architecture standards, ensure code quality, and implement best practices for mobile development.",
-      "Create and refine workflows, processes, and project documentation to support smooth execution and continuous improvement."
+      "Create and refine workflows, processes, and project documentation to support smooth execution and continuous improvement.",
     ],
     current: false,
   },
@@ -367,7 +367,6 @@ export const skillCategories: SkillCategory[] = [
       "Secure Development Practices",
     ],
   },
-
 ];
 
 export const recommendations: Recommendation[] = [
@@ -379,6 +378,15 @@ export const recommendations: Recommendation[] = [
     linkedin: "https://www.linkedin.com/in/judy-alqabbani-2bb5b81b4/",
     message:
       "During our collaboration on the Pyramind project, I had the pleasure of overseeing Bisher, and I can state with confidence that he is a superb product owner and engineer. He is quick, very talented, and very proactive. He takes the initiative without waiting for guidance and never lets obstacles stand in the way of advancement. Rather than claiming that something is challenging, he always finds a solution. He doesn't need micromanagement, is adaptable, and is a pleasure to work with. He is quick to grasp requirements, meticulous, and regularly completes excellent work on schedule. His dedication, work ethic, and sense of ownership are genuinely remarkable. He would be a great asset to any team.",
+  },
+  {
+    name: "Nazem Almsouti",
+    role: "Frontend Developer",
+    expertise: "Frontend",
+    period: "Pharaon Group",
+    linkedin: "https://www.linkedin.com/in/nazem-almsouti/",
+    message:
+      "I had the opportunity to work with Bisher Alhasani Aljazaeri at Pharaon Group across multiple projects — Pyramind, Askon-Syria, and Askonnect — where he served as Project Manager and I contributed as a frontend developer.\n\nBisher moves fast. Requirements go from definition to execution quickly, and he follows up consistently to make sure nothing stalls. His approach to problem-solving is hands-on — when a blocker came up, he'd engage directly with the developer to work through it together rather than going back and forth over messages. This kept technical issues resolved quickly and delivery on track.\n\nHe was also diligent about deadlines and project releases, tracking them closely and making sure nothing slipped.\n\nI'd recommend Bisher to any team that needs a Project Manager who executes quickly and stays close to the work.",
   },
 ];
 
@@ -397,7 +405,7 @@ export const education = {
     location: "Damascus, Syria",
     period: "Jun 2021 – Sep 2021",
   },
-  languages: [ 
+  languages: [
     { language: "Arabic", level: "Native" },
     { language: "English", level: "Very Good" },
   ],
